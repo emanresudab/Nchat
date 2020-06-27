@@ -1,0 +1,4 @@
+Building:
+	git clone https://github.com/emanresudab/nmsg
+	cd clone
+	mvn install

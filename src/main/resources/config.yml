@@ -1,0 +1,8 @@
+# Override the messaging system?
+overrideMsg: true
+
+# Passed directly to bukkit, first %s is the display name, and the second is the
+# message
+chatFormat: "<&3%s&r> %s"
+
+userDataPath: "users/"

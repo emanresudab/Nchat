@@ -1,0 +1,45 @@
+name: NChat
+main: tk.retromc.NChat.NChat
+version: 1.0.0
+api-version: 1.15
+
+commands:
+  msg:
+    description: message someone
+    aliases: [m, whisper, w, tell, t]
+  reply:
+    description: reply to a message
+    aliases: [r]
+  msgspy:
+    description: view all messages
+    aliases: [socialspy]
+  nick:
+    description: change nickname
+    aliases: [n]
+  mute:
+    description: mute someone
+  unmute:
+    description: unmute someone
+
+permissions:
+  nchat.spy:
+    description: gives access to /msgspy
+    default: op
+  nchat.nick:
+    description: give access to /nick
+    default: op
+  nchat.nick.color:
+    description: color in nickname
+    default: op
+  nchat.nick.other:
+    description: change another's nickname
+    default: op
+  nchat.mute:
+    description: mute another player
+    default: op
+  nchat.color:
+    description: use colors in chat
+    default: op
+  nchat.mute:
+   description: access to /mute and /unmute
+   default: op

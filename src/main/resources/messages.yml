@@ -1,0 +1,35 @@
+msg:
+  dispatchFormat: "&7&ome&r&7&o > $recipient&r&7&o: $message"
+  receiveFormat: "&7&o$dispatcher&r&7&o > me&r&7&o: $message"
+
+  noReply: "&cYou don't have anyone to reply to"
+
+  usageMessage: "&rUsage:\n/msg <player> <message>"
+
+  spy:
+    enable: "&eYou will now see all messages."
+    disable: "&eYou will no longer see all messages."
+    format: "&7&o$dispatcher&r&7&o > $recipient&r&7&o: $message"
+
+nick:
+  confirm: "&e$target's name has been changed to \"$nick&r&e\""
+  changed: "&eYour nickname has been changed to \"$nick&r&e\""
+  disabled: "&eNickname has been removed"
+
+  usageMessage: "&rUsage:\n/nick <player> <nick>"
+
+mute:
+  muted: "&e$player has been muted"
+  unmuted: "&e$player has been unmuted"
+  attempt: "&r<&e(Blocked) $player&r> $message"
+
+  enableNotify: "&eYou have been muted"
+  disableNotify: "&eYou have been unmuted"
+  attemptNotify: "&cYou are muted and cannot participate in chat"
+
+  usagMessage: "&rUsage:\n/mute <player>"
+
+playerNotFound: "&cPlayer not found"
+permissionDenied: "&cI'm sorry, but you do not have permission to perform this command. Please contact the server administrators if you believe this is a mistake."
+playerOnly: "&cOnly players may use this command"
+noTarget: "&cNo target specified"
