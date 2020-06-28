@@ -1,0 +1,46 @@
+* Synopsis
+  Simple and featureful chat manager for Bukkit.
+
+* Concepts
+
+** Applicators
+   Commands that can be applied to multiple players will usually accept a
+   comma-separated list of player names in place of the one name.  For example,
+   if you would like to send the same message to multiple people, you can do
+   something like =/msg p1, p2 a test message=. This would send the message "a
+   test message" to your friends p1 and p2.
+
+   Some commands also are available to use without any arguments at all. I have
+   not yet found a good way to classify these on the user's side, but so far the
+   only ones that implement this are =/mute= and =/unmute=.
+
+* Nicknames
+  Nicknames work a little differently here than in other plugins, because spaces
+  are supported. Like =/msg=, =/nick= is also an applicator, so you can
+  substitute the target player name for a list of names and apply the same nick
+  to multiple people. =/nick= also supports spaces in nicknames, the only reason
+  this is worth mentioning here is because this means that something like =/nick
+  mynick= or =/nick my nick= would not work, because they would seek out the
+  players "mynick", and "my" respectively; and in the case of the first one, it
+  would disable the nickname for the player mynick. So, the correct way to apply
+  these names would be =/nick myname mynick= and =/nick myname my nick= You may
+  also specify the shorthand =@s= as a substitute for your name.
+
+* Features and permissions
+| Command | Aliases                     | Permission            |
+|---------+-----------------------------+-----------------------|
+| /msg    | /m, /tell, /t, /whisper, /w | minecraft.command.msg |
+| /reply  | /r                          | minecraft.command.msg |
+| /msgspy | /ms, /socialspy, /ss        | nchat.spy             |
+| /nick   | /n                          | nchat.nick[.color]    |
+| /mute   | /unmute                     | nchat.mute            |
+
+
+| Feature    | Permission |
+|------------+------------|
+| Color chat | nchat.color |
+
+* Building
+#+BEGIN_SRC shell
+mvn install
+#+END_SRC
