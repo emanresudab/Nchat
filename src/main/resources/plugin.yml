@@ -12,7 +12,6 @@ commands:
     aliases: [r]
   msgspy:
     description: view all messages
-    aliases: [socialspy]
   nick:
     description: change nickname
     aliases: [n]

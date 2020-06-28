@@ -30,7 +30,7 @@ public class MsgSender {
 			p = Bukkit.getPlayer(spy);
 
 			if (dispatcher.getUniqueId() != spy && recipient.getUniqueId() != spy)
-				p.sendMessage(decorateString(instance.getMessage("spy.format"),
+				p.sendMessage(decorateString(instance.getMessage("msg.spy.format"),
 				                             dispatcherName, recipientName, message));
 		}
 
